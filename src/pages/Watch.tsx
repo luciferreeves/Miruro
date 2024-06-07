@@ -628,7 +628,7 @@ const Watch: React.FC = () => {
           animeInfo.title.romaji ||
           animeInfo.title.romaji ||
           '') +
-        ' | Miruro';
+        ' | Miruro | Midnight Ghouls';
     }
   }, [animeInfo]);
 

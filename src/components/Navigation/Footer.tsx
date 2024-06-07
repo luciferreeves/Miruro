@@ -109,7 +109,7 @@ export function Footer() {
   return (
     <PageWrapper>
       <footer>
-        <FooterBaseContainer aria-label='Main Footer' $isSub={false}>
+        {/* <FooterBaseContainer aria-label='Main Footer' $isSub={false}>
           <Text as='p' $isSub={false}>
             <FooterLogoImage alt='Footer Logo' /> <br />
             This website does not retain any files on its server. Rather, it
@@ -131,21 +131,21 @@ export function Footer() {
               Privacy & ToS
             </FooterLink>
           </StyledLinkList>
-        </FooterBaseContainer>
+        </FooterBaseContainer> */}
         <FooterBaseContainer aria-label='Sub Footer' $isSub={true}>
           <Text as='p' $isSub={true}>
             &copy; {year}{' '}
             <a
-              href='https://www.miruro.com'
+              href='https://miruro.rize.moe'
               rel='noopener noreferrer'
               style={{ color: 'grey' }}
             >
-              miruro.com
+              miruro.rize.moe
             </a>{' '}
-            | Website Made by <strong>Miruro no Kuon</strong>
+            | Website Made for <strong>Midnight Ghouls</strong>
           </Text>
           <nav aria-label='Social Links'>
-            <SocialIconsWrapper>
+            {/* <SocialIconsWrapper>
               {[
                 {
                   href: 'https://www.reddit.com/r/miruro',
@@ -173,7 +173,7 @@ export function Footer() {
                   <Icon aria-hidden='true' />
                 </ShareButton>
               ))}
-            </SocialIconsWrapper>
+            </SocialIconsWrapper> */}
           </nav>
         </FooterBaseContainer>
       </footer>
