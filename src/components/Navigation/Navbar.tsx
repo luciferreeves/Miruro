@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 import { DropDownSearch, useAuth } from '../../index';
 import { fetchAdvancedSearch, type Anime } from '../..';
-import { FiSun, FiMoon, FiX /* FiMenu */ } from 'react-icons/fi';
+import { FiSun, FiMoon, FiX, FiSettings /* FiMenu */ } from 'react-icons/fi';
 import { GoCommandPalette } from 'react-icons/go';
 import { IoIosSearch } from 'react-icons/io';
 import { CgProfile } from 'react-icons/cg';
@@ -523,6 +523,14 @@ export const Navbar = () => {
               )}
               <StyledButton onClick={toggleTheme} aria-label='Toggle Dark Mode'>
                 {isDarkMode ? <FiSun /> : <FiMoon />}
+              </StyledButton>
+              <StyledButton onClick={() => {
+                // navigate to /profile/settings
+                if (location.pathname !== '/profile/settings') {
+                  navigate('/profile/settings');
+                }
+              }} aria-label='Settings'>
+                <FiSettings />
               </StyledButton>
               <StyledButton onClick={navigateToProfile}>
                 {isLoggedIn && userData ? (
