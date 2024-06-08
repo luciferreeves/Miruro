@@ -140,9 +140,9 @@ export function Footer() {
               rel='noopener noreferrer'
               style={{ color: 'grey' }}
             >
-              miruro.rize.moe
+              miruro
             </a>{' '}
-            | Website Made for <strong>Midnight Ghouls</strong>
+            | Instance brought to you by <strong>rize.moe</strong>
           </Text>
           <nav aria-label='Social Links'>
             {/* <SocialIconsWrapper>

@@ -211,7 +211,7 @@ const Home = () => {
   }, [itemsCount]);
 
   useEffect(() => {
-    document.title = `Miruro | Midnight Ghouls | rize.moe`;
+    document.title = `Miruro | rize.moe`;
   }, [activeTab]);
 
   useEffect(() => {

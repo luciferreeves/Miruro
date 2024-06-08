@@ -46,22 +46,25 @@ const TopContainer = styled.div`
 `;
 
 const LogoImg = styled(Link)`
-  width: 7rem;
+  width: 7.2rem;
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
   color: var(--global-text);
-  content: var(--logo-text-transparent);
   cursor: pointer;
   transition:
     color 0.2s ease-in-out,
     transform 0.2s ease-in-out;
 
-  &:hover,
+  &:hover {
+    color: var(--global-text);
+    transform: scale(1.05);
+  }
+
+
   &:active,
   &:focus {
-    color: black;
-    transform: scale(1.05);
+    transform: scale(1);
   }
 
   &:active {
@@ -460,6 +463,7 @@ export const Navbar = () => {
               onClick={() => window.scrollTo(0, 0)}
             >
               見るろ の 久遠
+              {/* 見るろ */}
             </LogoImg>
 
             {/* Render InputContainer within the navbar for screens larger than 500px */}
